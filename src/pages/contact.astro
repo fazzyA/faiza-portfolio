@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import MiFoto from "../assets/img/MiFoto.png";
+import MyPhoto from "../assets/img/MiFoto.png";
 import CopyMail from "../components/links/copyMail.jsx";
 
 const links = [
@@ -21,14 +21,14 @@ const links = [
     <div class="mb-2 mt-11">
       <div class="mb-2 mt-11">
         <div class="relative flex items-center justify-center">
-          <!-- Foto con borde -->
+          <!-- Photo with border -->
           <img
-            src={MiFoto.src}
-            alt="Foto de Lautaro"
+            src={MyPhoto.src}
+            alt="Photo of Lautaro"
             class="border-primary h-32 w-32 rounded-full shadow-lg"
           />
 
-          <!-- Texto circular alrededor de la foto -->
+          <!-- Circular text around the photo -->
           <svg
             viewBox="0 0 200 200"
             class="animate-spin-slow absolute h-48 w-48"
@@ -39,7 +39,7 @@ const links = [
               fill="none"></path>
             <text fill="#69c7c7" font-size="18" font-weight="bold">
               <textPath href="#circlePathText" startOffset="0%">
-                ✦ Hola ! ✦ Estoy disponible para nuevas oportunidades!
+                ✦ Hello! ✦ I’m available for new opportunities!
               </textPath>
             </text>
           </svg>
@@ -49,7 +49,7 @@ const links = [
 
     <CopyMail client:visible />
 
-    <!-- Lista de Links -->
+    <!-- List of Links -->
     <div class="w-full max-w-xl space-y-4">
       {
         links.map((link) => (

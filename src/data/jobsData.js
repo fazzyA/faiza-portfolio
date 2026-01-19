@@ -3,32 +3,32 @@ export const jobs = [
     title: "Frontend Developer - Neowyze",
     time: ["12/2024 - 05/2025"],
     description:
-      "Mis tareas en Neowyze consisten en desarrollar webs responsivas basadas en diseños proporcionados en Figma, utilizando Astro, React, Tailwind y otras librerías frontend.",
+      "My tasks at Neowyze consist of developing responsive websites based on designs provided in Figma, using Astro, React, Tailwind, and other frontend libraries.",
     list: [
-      "Para el flujo de trabajo, utilizo Jira como herramienta de gestión y Git/GitHub como sistema de control de versiones.",
-      "Trabajo bajo la metodología ágil Scrum, con sprints de 2 semanas y dos reuniones diarias (dailies) para planificar el proyecto y presentar avances",
+      "For the workflow, I use Jira as a management tool and Git/GitHub as a version control system.",
+      "I work under the agile Scrum methodology, with 2-week sprints and daily meetings (dailies) to plan the project and present progress.",
     ],
   },
   {
     title: "Frontend Developer - Vegna",
     time: ["05/2024 - 02/2024"],
-    description: "Desarrollo y mantenimiento de interfaces de usuario con:",
+    description: "Development and maintenance of user interfaces using:",
     list: ["JavaScript - TypeScript", "React - Next.js", "Tailwind", "Shadcn"],
   },
   {
     title: "Frontend Developer - Igrowker",
     time: ["07/2022 - 08/2022"],
-    description: "Desarrollo y mantenimiento de interfaces de usuario con",
-    list: ["React - React Router - Context api - CSS - Material UI"],
+    description: "Development and maintenance of user interfaces using:",
+    list: ["React - React Router - Context API - CSS - Material UI"],
   },
   {
-    title: " Web Developer - NoCountry",
+    title: "Web Developer - NoCountry",
     time: ["03/2022 - 06/2022"],
     description:
-      "Desarrollo de aplicaciones web responsivas MVP fullstack usando para su desarrollo tecnologías como",
+      "Development of responsive MVP full-stack web applications using technologies such as:",
     list: [
-      "Frontend : React - React Router - Context api - tailwindcss",
-      "Backend : API REST con Express.js, MongoDB",
+      "Frontend: React - React Router - Context API - Tailwind CSS",
+      "Backend: REST API with Express.js and MongoDB",
     ],
   },
 ];

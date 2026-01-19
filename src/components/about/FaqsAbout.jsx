@@ -37,20 +37,20 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState(null);
 
   const skills = {
-    "¿Qué tecnologías uso?": [
-      "Actualmente trabajo con tecnologías como React, Next.js, Vue.js, Astro, tailwind, Boostrap y demas librerias y frameworks para el frontend y en el backend trabajo con Node.js, Express, MongoDB, Firebase, entre otras.",
+    "What technologies do I use?": [
+      "I currently work with technologies such as React, Next.js, Vue.js, Astro, Tailwind, Bootstrap, and other libraries and frameworks for the frontend. On the backend, I work with Node.js, Express, MongoDB, Firebase, among others.",
     ],
-    "Mi Experiencia": [
-      "Tengo experiencia trabajando en startups y consultoras tecnológicas, desarrollando y maquetando sitios web a partir de diseños en Figma. Para ello, utilizo tecnologías frontend como Astro y React, junto con Tailwind CSS y otras librerías y frameworks para el estilizado y la optimización de interfaces.",
+    "My Experience": [
+      "I have experience working in startups and tech consultancies, developing and laying out websites from Figma designs. For this, I use frontend technologies such as Astro and React, along with Tailwind CSS and other libraries and frameworks for styling and interface optimization.",
     ],
-    "Mi formacion": [
-      "Estudié una tecnicatura en automatización de grado universitaria en el ITU, lo que me brindó las bases en programación. Posteriormente, decidí enfocarme en el desarrollo web y de software estudiando en el ITU. Ademas, realicé diversos cursos, diplomados y capacitaciones en grandes universidades Argentinas, como la UTN y el Instituto Tecnológico Universitario, tambien, complemento mi formación con el aprendizaje autodidacta, lo que me permite mantenerme actualizado con los avances tecnológicos en el desarrollo de software.",
+    "My Education": [
+      "I studied a university-level technical degree in Automation at ITU, which gave me the foundations in programming. Later, I decided to focus on web and software development by studying at ITU. In addition, I completed various courses, diplomas, and training programs at major Argentine universities such as UTN and the Instituto Tecnológico Universitario. I also complement my education with self-learning, which allows me to stay up to date with technological advances in software development.",
     ],
-    "¿Cómo trabajo en equipo?": [
-      "Tengo experiencia trabajando en equipos multidisciplinarios, donde me he encargado del desarrollo frontend de aplicaciones web. Para ello, utilizo metodologías ágiles como Scrum y Kanban, además de herramientas de control de versiones como Git y GitHub para gestionar el flujo de trabajo. También cuento con experiencia en el uso de herramientas de gestión de proyectos como Trello y Jira, facilitando la organización y colaboración dentro del equipo.",
+    "How do I work in a team?": [
+      "I have experience working in multidisciplinary teams, where I have been responsible for frontend development of web applications. For this, I use agile methodologies such as Scrum and Kanban, as well as version control tools like Git and GitHub to manage the workflow. I also have experience using project management tools such as Trello and Jira, facilitating organization and collaboration within the team.",
     ],
-    "Metodolgias Agiles": [
-      "He trabajado con metodologías ágiles como Scrum y Kanban. En Scrum, participé en sprints de dos semanas, donde al finalizar cada sprint realizaba un pull request (PR) con mi trabajo, el cual pasaba por una fase de revisión y corrección antes de ser fusionado y enviado a producción. También he trabajado con Kanban, utilizando tableros para gestionar tareas y moverlas según su estado de progreso. Además, participé en reuniones diarias (dailies) para planificar y reportar avances del proyecto, asegurando una comunicación eficiente dentro del equipo.",
+    "Agile Methodologies": [
+      "I have worked with agile methodologies such as Scrum and Kanban. In Scrum, I participated in two-week sprints, where at the end of each sprint I created a pull request (PR) with my work, which went through a review and correction phase before being merged and sent to production. I have also worked with Kanban, using boards to manage tasks and move them according to their progress status. In addition, I participated in daily meetings (dailies) to plan and report project progress, ensuring efficient communication within the team.",
     ],
   };
 
@@ -61,9 +61,9 @@ const SkillsList = () => {
   return (
     <div className="flex flex-col items-center text-left mx-auto max-w-6xl px-4">
       <div className="site-container mt-10">
-        <h2 class="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-end">
-          <span class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"></span>
-          <span class="drop-shadow-[2px_2px_0_#7836cf]">Mas Sobre Mi</span>
+        <h2 className="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-end">
+          <span className="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"></span>
+          <span className="drop-shadow-[2px_2px_0_#7836cf]">More About Me</span>
         </h2>
         <ul className="mt-4 space-y-4 text-lg">
           {Object.entries(skills).map(([category, items]) => (
@@ -110,4 +110,5 @@ const SkillsList = () => {
     </div>
   );
 };
+
 export default SkillsList;

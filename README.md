@@ -1,46 +1,45 @@
 # 🌌 Personal Portfolio – Lautaro 
 
----
-
-## 🚀 Características principales
-
-- ⚡️ Construido con **Astro** y **React** 
-- 🎨 **Diseño responsive**
-- 🧠 **Filtrado dinámico de proyectos**
-- 💬 Secciones personalizables: *Sobre mí*, *Proyectos*, *Experiencia*, *Contacto*  
+# 🌌 Personal Portfolio – Lautaro
 
 ---
 
-## 🧩 Tecnologías utilizadas
+## 🚀 Main Features
+
+- ⚡️ Built with **Astro** and **React**  
+- 🎨 **Responsive design**  
+- 🧠 **Dynamic project filtering**  
+- 💬 Customizable sections: *About Me*, *Projects*, *Experience*, *Contact*  
+
+---
+
+## 🧩 Technologies Used
 
 - [Astro](https://astro.build/)  
 - [TailwindCSS](https://tailwindcss.com/)  
 - [TypeScript / JavaScript]  
-- [React (en componentes selectivos)]  
+- [React (used in selected components)]  
 - [Vite](https://vitejs.dev/)  
 
 ---
 
-## 📂 Estructura del proyecto
+## 📂 Project Structure
 
-
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Inside your Astro project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
-│ └── images/ # Recursos estáticos
+│   └── images/ # Static resources
 ├── src/
-│ ├── components/ # Componentes reutilizables
-│ ├── layouts/ # Layout base
-│ ├── pages/ # Páginas principales (index, proyectos, etc.)
-│ ├── scripts/ # JS para interactividad (filtro, animaciones)
-│ ├── styles/ # CSS global o módulos
-│ └── data/ # Datos (proyectos, experiencia)
+│   ├── components/ # Reusable components
+│   ├── layouts/ # Base layouts
+│   ├── pages/ # Main pages (index, projects, etc.)
+│   ├── scripts/ # JS for interactivity (filtering, animations)
+│   ├── styles/ # Global CSS or modules
+│   └── data/ # Data (projects, experience)
 └── astro.config.mjs
+
 ```
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).

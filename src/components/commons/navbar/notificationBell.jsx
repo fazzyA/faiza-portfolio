@@ -6,29 +6,29 @@ export default function NotificationBell() {
   const [notifications, setNotifications] = useState([]);
   const containerRef = useRef(null);
 
-  // Notificaciones
+  // Base notifications
   const baseNotifications = [
-    { id: 1, text: "Nuevo proyecto publicado 🚀", read: false },
+    { id: 1, text: "New project published 🚀", read: false },
     {
       id: 2,
-      text: "Hey como va?, te comento que actualmente estoy aprendiendo desarrollo móvil ✨",
+      text: "Hey! I'm currently learning mobile development ✨",
       read: false,
     },
   ];
 
-  // Obtener el id
+  // Get last base ID
   const lastBaseId =
     baseNotifications.length > 0
       ? baseNotifications[baseNotifications.length - 1].id
       : null;
 
-  // Obtener el id del último elemento no leído
+  // Get last unread ID
   const lastUnreadId =
     notifications.length > 0
       ? [...notifications].reverse().find((n) => !n.read)?.id
       : null;
 
-  // Cargar desde localStorage y mezclar con base
+  // Load from localStorage and merge with base
   useEffect(() => {
     const saved = localStorage.getItem("notifications");
     let merged = baseNotifications;
@@ -41,7 +41,7 @@ export default function NotificationBell() {
     setNotifications(merged);
   }, []);
 
-  // localStorage
+  // Save to localStorage
   useEffect(() => {
     if (notifications.length > 0) {
       localStorage.setItem("notifications", JSON.stringify(notifications));
@@ -52,7 +52,7 @@ export default function NotificationBell() {
   const read = notifications.filter((n) => n.read);
   const unreadCount = unread.length;
 
-  // Cerrar dropdown
+  // Close dropdown on outside click
   useEffect(() => {
     function handleDocClick(e) {
       if (containerRef.current && !containerRef.current.contains(e.target)) {
@@ -63,7 +63,7 @@ export default function NotificationBell() {
     return () => document.removeEventListener("click", handleDocClick);
   }, []);
 
-  // Marca como leidas
+  // Mark as read when opened
   useEffect(() => {
     if (open && unreadCount > 0) {
       setNotifications((prev) => prev.map((n) => ({ ...n, read: true })));
@@ -75,7 +75,7 @@ export default function NotificationBell() {
       <button
         type="button"
         aria-expanded={open}
-        aria-label="Notificaciones"
+        aria-label="Notifications"
         onClick={() => setOpen((v) => !v)}
         className="relative rounded-full p-2 hover:bg-gray-700"
       >
@@ -92,7 +92,7 @@ export default function NotificationBell() {
           <div className="p-3">
             <div className="mb-2 flex items-center justify-between">
               <h4 className="text-xm font-bold text-gray-200 drop-shadow-[1px_1px_0_#7836cf]">
-                Notificaciones
+                Notifications
               </h4>
             </div>
 
@@ -105,7 +105,7 @@ export default function NotificationBell() {
                 ))}
               </ul>
             ) : (
-              <p className="text-sm text-gray-400">No hay notificaciones.</p>
+              <p className="text-sm text-gray-400">No notifications.</p>
             )}
           </div>
         </div>

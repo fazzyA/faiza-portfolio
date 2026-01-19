@@ -9,9 +9,10 @@
     const buttons = Array.from(document.querySelectorAll(".filter-btn"));
     if (!container || !buttons.length) return;
 
-    const cards = Array.from(container.querySelectorAll("[data-categoria]"));
+    const cards = Array.from(container.querySelectorAll("[data-category]"));
     if (!cards.length) return;
 
+    // Show a project card
     function showCard(card) {
       card.style.display = "flex";
       requestAnimationFrame(() => {
@@ -20,6 +21,7 @@
       });
     }
 
+    // Hide a project card
     function hideCard(card) {
       card.classList.remove(VISIBLE_CLASS);
       card.classList.add(HIDDEN_CLASS);
@@ -28,22 +30,23 @@
       }, HIDE_TIMEOUT);
     }
 
+    // Apply filter to all project cards
     function applyFilter(filter) {
       const normalized = filter.toLowerCase();
       cards.forEach((card) => {
-        const categoria = (
-          card.getAttribute("data-categoria") ?? ""
-        ).toLowerCase();
-        const match = normalized === "all" || categoria === normalized;
+        const category = (card.getAttribute("data-category") ?? "").toLowerCase();
+        const match = normalized === "all" || category === normalized;
         match ? showCard(card) : hideCard(card);
       });
     }
 
+    // Set the active button styling
     function setActive(btn) {
       buttons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
     }
 
+    // Attach click events to filter buttons
     buttons.forEach((btn) => {
       btn.onclick = () => {
         const filter = btn.dataset.filter || "all";
@@ -52,6 +55,7 @@
       };
     });
 
+    // Initialize with the "All" filter active
     const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
     if (allBtn) {
       setActive(allBtn);

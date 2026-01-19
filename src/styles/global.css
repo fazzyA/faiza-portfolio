@@ -1,46 +1,46 @@
 @import "tailwindcss";
 
-.primary {
+/* Colors */
+.text-purple {
   color: #7836cf;
 }
-.secondary {
+.text-dark-purple {
   color: #512092;
 }
-.bg-primary {
+.background-purple {
   background-color: #7836cf;
 }
-.bg-secondary {
+.background-dark-purple {
   background-color: #512092;
 }
-.text-primary {
+.text-purple-primary {
   color: #7836cf;
 }
 
-/* reglas hover (usar estas clases directamente) */
-.hover-text-secondary:hover {
+/* Hover rules (use these classes directly) */
+.hover-text-purple:hover {
   color: #7836cf;
 }
-.hover-bg-secondary:hover {
+.hover-background-purple:hover {
   background-color: #7836cf;
 }
-.hover\:bg-secondary:hover {
+.hover-background-dark-purple:hover {
   background-color: #512092;
 }
-.hover\:text-secondary:hover {
+.hover-text-dark-purple:hover {
   color: #512092;
 }
 
-.text-shadow {
+/* Text shadow */
+.text-shadow-purple {
   text-shadow: 2px 2px 0 #620deb;
 }
-
 .text-shadow-cyan {
   text-shadow: 2px 2px 0 #0debd8;
 }
 
-/* estilos del home */
-
-@keyframes gradientMove {
+/* Home page animations */
+@keyframes diagonalMove1 {
   0% {
     transform: translateX(0) translateY(0);
   }
@@ -52,7 +52,7 @@
   }
 }
 
-@keyframes gradientMove2 {
+@keyframes diagonalMove2 {
   0% {
     transform: translateX(0) translateY(0);
   }
@@ -64,14 +64,15 @@
   }
 }
 
-.animate-gradientMove {
-  animation: gradientMove 8s ease-in-out infinite alternate;
+.animate-diagonalMove1 {
+  animation: diagonalMove1 8s ease-in-out infinite alternate;
 }
 
-.animate-gradientMove2 {
-  animation: gradientMove2 8s ease-in-out infinite alternate;
+.animate-diagonalMove2 {
+  animation: diagonalMove2 8s ease-in-out infinite alternate;
 }
 
-.text-shadow {
+/* Override text shadow with a slightly different purple */
+.text-shadow-purple-strong {
   text-shadow: 2px 2px 0 #6d0deb;
 }
