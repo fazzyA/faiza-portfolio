@@ -8,11 +8,11 @@ export default function NotificationBell() {
 
   // Base notifications
   const baseNotifications = [
-    { id: 1, text: "New project published 🚀", read: false },
+    { id: 1, text: "New project published 🚀", read: true },
     {
       id: 2,
-      text: "Hey! I'm currently learning mobile development ✨",
-      read: false,
+      text: "Hey! I'm currently learning mosdfsdfbile development ✨",
+      read: true,
     },
   ];
 
