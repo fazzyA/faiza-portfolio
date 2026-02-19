@@ -2,14 +2,12 @@
 import MiFoto from "../../assets/img/MiFoto.png";
 ---
 
-
-<!-- Main container -->
-<div
-  class="mx-auto mt-20 flex max-w-6xl flex-col items-center gap-8 px-6 lg:flex-row "
->
-  <!-- Image -->
-  <div
-    class="border-primary h-64 w-64 overflow-hidden rounded-2xl shadow-lg md:h-96 md:w-96 drop-shadow-[4px_4px_0_#7836cf]"
+<div class="mx-auto mt-20 max-w-6xl px-6 text-gray-300">
+  
+  {/* Image Container with Circle Shape Wrapping */}
+  <div 
+    class="float-left mr-10 mb-6 bg-amber-100 border-primary h-64 w-64 md:h-96 md:w-96 rounded-full shadow-lg drop-shadow-[4px_4px_0_#7836cf] overflow-hidden"
+    style="shape-outside: circle(50%);"
   >
     <img
       src={MiFoto.src}
@@ -18,60 +16,77 @@ import MiFoto from "../../assets/img/MiFoto.png";
     />
   </div>
 
-  <!-- Text -->
-  <div class="flex-1 text-center text-gray-300 lg:text-left">
-    <h2 class="text-3xl font-bold text-white">
-      My name is <span class="text-white text-shadow">Lautaro</span>
+  {/* Text Content */}
+  <div class="text-justify leading-relaxed">
+    {/* Main heading */}
+    <h2 class="text-4xl font-bold text-white mb-6">
+      My 15-Year Journey in <span class="text-primary">Technology</span>
     </h2>
-    <p class="mt-4">
-      I am from <span class="text-primary font-semibold">Argentina</span> and I
-      currently work as a
-      <span class="text-primary font-semibold"
-        >full-stack software developer</span
-      >, with a focus on
-      <span class="text-primary font-semibold"
-        >front-end development</span
-      >
-      and
-      <span class="text-primary font-semibold">user experience</span>,
-      using technologies such as
-      <span class="text-primary italic"
-        >React, Astro, JavaScript, TypeScript, Bootstrap, Tailwind, CSS,
-        Node.js, Express.js, MongoDB and MySQL</span
-      >.
+
+    {/* Intro paragraph */}
+    <p class="mb-4">
+      I didn’t begin my career simply wanting to write code. I began because I wanted to understand how software was reshaping the world. I’ve always believed that almost any idea can be built, improved, and scaled — if you’re willing to dig deep, learn continuously, and do the work.
     </p>
-    <p class="mt-2">
-      My interest in
-      <span class="text-primary font-semibold">technology</span> and
-      <span class="text-primary font-semibold">programming</span> began while I
-      was studying for a
-      <span class="text-primary font-semibold"
-        >University Technical Degree in Automation</span
-      >
-      at
-      <span class="text-primary font-semibold">UnCuyo</span>. In the
-      <span class="text-primary font-semibold">computer science</span>
-      class, I had my first contact with the world of programming. Motivated by
-      <span class="text-primary font-semibold">curiosity</span>, I continued
-      studying in a
-      <span class="text-primary font-semibold">self-taught</span> way, then in a
-      <span class="text-primary font-semibold"
-        >technical degree focused on software development</span
-      >, and I decided that this was what I wanted to do at a
-      <span class="text-primary font-semibold">professional</span> level.
+
+    {/* Philosophy */}
+    <p class="font-semibold text-white mb-4">
+      Technology isn’t magic. <br />
+      It isn’t shortcuts. <br />
+      It’s problem-solving, persistence, and practice.
     </p>
-    <p class="mt-2">
-      I am always committed to
-      <span class="text-primary font-semibold"
-        >continuous growth</span
-      >
-      and
-      <span class="text-primary font-semibold">improvement</span> in my skills,
-      seeking to adapt to new
-      <span class="text-primary font-semibold">technological advances</span> and
-      to improve myself at a
-      <span class="text-primary font-semibold">professional</span> and
-      <span class="text-primary font-semibold">personal</span> level.
+
+    {/* Experience overview */}
+    <p class="mb-4">
+      Over the past decade and a half, I’ve navigated the evolution of the web — from monolithic architectures to AI-driven, scalable ecosystems. My path hasn’t been linear, and that’s been my greatest strength.
     </p>
+
+    {/* Roles */}
+    <p class="font-semibold text-white mb-2">
+      I’ve occupied almost every seat at the table:
+    </p>
+    <p class="mb-4">
+      Full-stack engineer | AI systems builder | Engineering leader | Mentor and educator
+    </p>
+
+    <p class="mb-4">
+      Instead of choosing one lane, I leaned into all of them. I’ve built production-grade applications, delivered AI-focused systems optimized for performance and reliability, led engineering teams, refined development processes, and mentored aspiring developers.
+    </p>
+
+    {/* Key learning */}
+    <p class="font-semibold text-white mb-4 italic">
+      Along the way, I learned something critical: <br />
+      Great software is built by empowered people — not just smart code.
+    </p>
+
+    <p class="mb-4">
+      Early in my career, I thought I had to choose: Be a technical expert — or become a people leader. I eventually realized technology is a human endeavor. A system is only as good as the team that maintains it and the lives it improves. That realization became my edge. I don’t just deliver products — I build sustainable systems and empowered teams.
+    </p>
+
+    <p class="mb-4">
+      When I’m not architecting systems or refining AI models, I actively contribute to the <span class="text-primary font-semibold">Pakistan IT ecosystem</span>. Through national training programs, I’ve helped hundreds of aspiring developers gain clarity, confidence, and a roadmap into the industry. Knowledge multiplies when it’s shared.
+    </p>
+
+    <p class="mb-6">
+      Whether you're a founder or a developer, my mission is to make technology a force multiplier for your goals.
+    </p>
+
+    <div class="space-y-3 mb-6 bg-white/5 p-6 rounded-xl border border-white/10">
+      <p class="font-semibold text-white">If You Are… &nbsp; I Can Help You…</p>
+      <ul class="list-disc list-inside space-y-2">
+        <li><span class="font-semibold text-primary">Startup Founder</span> - Scale your product and build an inspired engineering team</li>
+        <li><span class="font-semibold text-primary">Aspiring Developer</span> - Break into the industry with clarity and confidence</li>
+        <li><span class="font-semibold text-primary">Technical Team</span> - Improve processes while keeping development human and meaningful</li>
+      </ul>
+    </div>
+
+    <p class="mb-4">
+      I’m not a robot — even if I build them. I deal with bugs, deadlines, and learning curves like everyone else. My promise is transparency. I share both failures and wins so you can accelerate without repeating the same mistakes.
+    </p>
+
+    <p class="font-semibold text-white text-lg">
+      The goal is simple: To make technology a force multiplier. Whether I’m automating complex workflows or guiding startups through scale, my goal remains the same: To leave the system, the code, and the people better than I found them.
+    </p>
+    
+    <div class="clear-both"></div>
   </div>
 </div>
